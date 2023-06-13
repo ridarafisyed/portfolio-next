@@ -1,0 +1,19 @@
+{
+  "databases": [
+    {
+      "name": "MongoDB",
+      "description": "Skilled in building server-side rendered web applications with optimized performance using Next.js.",
+      "score": 85
+    },
+    {
+      "name": "Postgres",
+      "description": "Skilled in building more reliable and scalable code with TypeScript.",
+      "score": 90
+    },
+    {
+      "name": "MySQL",
+      "description": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "score": 90
+    }
+  ]
+}

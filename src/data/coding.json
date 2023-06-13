@@ -1,0 +1,23 @@
+{
+  "coding": [
+    { "language": "python", "score": 95 },
+    { "language": "C#", "score": 75 },
+    { "language": "Javascript", "score": 97 },
+    { "language": "React", "score": 95 },
+    { "language": "NextJs", "score": 92 },
+    { "language": "Typescript", "score": 93 }
+  ],
+  "language": [
+    { "language": "python", "score": 95 },
+    { "language": "C#", "score": 75 },
+    { "language": "Javascript", "score": 97 }
+  ],
+  "Services": [
+    { "language": "Web App Development", "score": 95 },
+    { "language": "Mobile App Development", "score": 75 },
+    { "language": "Desktop App Development", "score": 97 },
+    { "language": "Graphic Designing", "score": 95 },
+    { "language": "Illustation", "score": 92 },
+    { "language": "UI/UX", "score": 93 }
+  ]
+}

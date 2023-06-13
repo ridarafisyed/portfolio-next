@@ -1,0 +1,292 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "DIVINE MARKET",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
+      "description": "",
+      "date": "Mar 16, 2022",
+      "path": "/asserts/projects/1.png",
+      "type": "E-Commerce",
+      "subType": ["Frontend", "Backend"],
+      "tools": [
+        "Next.js",
+        "Sanity",
+        "Stripe",
+        "TailwindCSS",
+        "shadui",
+        "Postgres Vercel"
+      ],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Clinic Appointment App",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/2.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend", "Backend"],
+      "tools": ["React.js", "", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Quiz Trivia",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/3.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Aurteck website",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/4.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Go Green",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/5.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Auto wash web site",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/6.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "School Management System",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/7.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "IMDb Clone App",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
+      "path": "/asserts/projects/8.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Panaverse Dao App",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
+      "path": "/asserts/projects/9.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "subType": ["frontend", "Backend", "UI/UX"],
+      "tools": ["Next Js", "Chakra Ui", "TailwindCSS", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    }
+  ]
+}

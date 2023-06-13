@@ -1,9 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import ContentSide from "@/components/Sections";
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,5 +20,13 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  return <ContentSide />;
+  return (
+    <div className="relative h-screen">
+      <Navbar isScrolled={isScrolled} />
+      <div className="bg-zinc-100 dark:bg-gray-600 w-64 main-page"></div>
+      <div className="flex-1 flex overflow-hidden">
+        <div className="flex-1 overflow-y-scroll">{children}</div>
+      </div>
+    </div>
+  );
 }

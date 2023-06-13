@@ -1,0 +1,20 @@
+{
+  "servers": [
+    {
+      "name": "Node.js",
+      "description": "Experienced in building fast and scalable backend applications using Node.js with a vast ecosystem of packages and tools.",
+      "score": 95
+    },
+    {
+      "name": "Python",
+      "description": "Proficient in building tools for data analysis, ML, web dev, and more.",
+      "score": 95
+    },
+
+    {
+      "name": "PHP/Laravel",
+      "description": "Skilled in building web apps with a seamless user experience using Laravel.",
+      "score": 85
+    }
+  ]
+}

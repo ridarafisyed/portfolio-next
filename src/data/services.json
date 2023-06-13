@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "name": "Custom software development",
+      "description": "Creating tailor-made software applications for clients based on their specific business requirements and needs.",
+      "path": "/asserts/desktop_window.svg"
+    },
+    {
+      "name": "Web application development",
+      "description": "Building custom websites for businesses or individuals, including front-end and back-end development, content management systems, and e-commerce solutions.",
+      "path": "/asserts/desktop_window.svg"
+    },
+    {
+      "name": "Mobile application development",
+      "description": "Creating custom mobile apps for Android and iOS platforms, including design, development, and testing.",
+      "path": "/asserts/mobile.svg"
+    },
+    {
+      "name": "Database development and integration",
+      "description": "Building and integrating databases for businesses to help manage data, including data modeling, database design, and integration with other software systems.",
+      "path": "/asserts/database.svg"
+    },
+    {
+      "name": "API development and integration",
+      "description": "Developing custom APIs to connect software systems and data, including designing and implementing RESTful APIs.",
+      "path": "/asserts/settings.svg"
+    },
+    {
+      "name": "Cloud-based application development",
+      "description": "Developing and deploying applications on cloud platforms like Amazon Web Services (AWS) or Google Cloud Platform (GCP).",
+      "path": "/asserts/cloud.svg"
+    }
+  ]
+}

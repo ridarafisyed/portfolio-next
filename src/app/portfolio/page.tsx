@@ -34,8 +34,8 @@ const Portfolio = () => {
           <div className="container py-14 mx-auto items-center justify-center">
             <div className="mx-auto mt-10  max-w-2xl border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               {projects.map((project: ProjectType, index) => (
-                <div className="mb-4">
-                  <ProjectList project={project} key={index} />
+                <div className="mb-4" key={index}>
+                  <ProjectList project={project} />
                 </div>
               ))}
             </div>

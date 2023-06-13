@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -14,10 +15,12 @@ const ProjectDetailPage = ({ project }: any) => {
           </h2>
           <div className="grid grid-cols-2 gap-x-8 gap-y-16 w-full my-4 py-4">
             <div className="col-span-4">
-              <img className="rounded-lg" src={project.path} alt="" />
+              <Image className="rounded-lg" src={project.path} alt="" />
               <div className=" max-w-xl flex flex-row mt-3 px-3 py-1.5 font-medium gap-4">
                 <Link href="#">GitHub </Link>
-                <Link href="#" className="text-yellow-500">Demo </Link>
+                <Link href="#" className="text-yellow-500">
+                  Demo{" "}
+                </Link>
               </div>
             </div>
             <div className="col-span-8 space-x-2 space-y-4">

@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import ContentSide from "@/components/Sections";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);

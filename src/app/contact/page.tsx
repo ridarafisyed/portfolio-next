@@ -11,14 +11,14 @@ const Contact = () => {
             </h1>
             <div className="flex justify-center gap-3 border-b border-gray-300/10 pb-12">
               <a href="#" className="">
-                f Facebook
+               <span className="text-yellow-500 font-bold text-xl"> f </span> Facebook
               </a>
               <a href="#" className="">
-                in LinkedIn
+               <span className="text-yellow-500 font-bold text-xl"> in </span> LinkedIn
               </a>
 
               <a href="#" className="">
-                @ ridarafisyed@gmail.com
+                <span className="text-yellow-500 font-bold text-xl"> @ </span>  ridarafisyed@gmail.com
               </a>
             </div>
             <div></div>

@@ -16,8 +16,8 @@ const About = () => {
 
               <p className="text-lg text-justify  mt-2 mb-8 w-full">
                 Experienced web developer with 5+ years of expertise in
-                JavaScript, React, Next.js TypeScript Node.js, and SQL.
-                Proficient in Agile and Waterfall development environments, with
+                <strong className="text-yellow-500"> JavaScript, React js, Next.js TypeScript Node.js, MySQL, SQLite, PostgresSQL and mongoDB</strong>.
+                Proficient in <strong className="text-yellow-500"> Agile, Waterfall and DevOps</strong> development environments, with
                 a focus on creating efficient and user-friendly web solutions.
                 Passionate about problem-solving and committed to delivering
                 high-quality results.

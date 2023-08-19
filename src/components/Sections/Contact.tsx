@@ -15,7 +15,6 @@ const Contact = () => {
               <a href="https://www.linkedin.com/in/ridarafisyed/" className="">
                <span className="text-yellow-500 font-bold text-xl"> in </span> LinkedIn
               </a>
-
               <a href="mailto:ridarafisyed@gmail.com?Subject=Web%20Profile%20Requestgit" className="">
                 <span className="text-yellow-500 font-bold text-xl"> @ </span>  ridarafisyed@gmail.com
               </a>

@@ -3,10 +3,11 @@
     {
       "id": "1",
       "title": "DIVINE MARKET",
-      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
+      "shortDescription": "Divine Market is not just an e-commerce store; it's a testament to my skills in creating performant, visually stunning, and user-centric web applications. The combination of Next.js, TypeScript, and Tailwind CSS allowed me to deliver a top-tier online shopping experience for customers while providing a user-friendly admin interface for store owners",
       "description": "",
       "date": "Mar 16, 2022",
-      "path": "/asserts/projects/1.png",
+      "path": "/asserts/projects/2.png",
+      "link": "https://dine-market-rrs.vercel.app/",
       "type": "E-Commerce",
       "subType": ["Frontend", "Backend"],
       "tools": [
@@ -17,21 +18,26 @@
         "shadui",
         "Postgres Vercel"
       ],
-      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "overview": "Divine Market is a sophisticated and user-friendly e-commerce store that I had the pleasure of designing and developing using cutting-edge technologies. This project perfectly showcases my expertise in web development, particularly in Next.js, TypeScript, and Tailwind CSS.",
       "features": [
-        "Home page with an introduction and links to my social media profiles",
-        "About page with information about my education, skills, and experience",
-        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
-        "Contact page with a contact form and links to my email and LinkedIn profiles",
-        "Responsive design that works on desktop, tablet, and mobile devices",
-        "Custom design with clean and modern typography, color scheme, and layout"
+        "Next.js for Seamless Performance: Leveraging Next.js, this e-commerce store offers lightning-fast page loading and server-side rendering for a smooth and responsive user experience. Shoppers can navigate through the site effortlessly, ensuring they find what they're looking for quickly.",
+
+        "TypeScript for Robust Codebase: My choice of TypeScript ensures a robust and maintainable codebase. It enables error-catching during development and enhances the overall reliability of the application.",
+
+        "Tailwind CSS for Stylish UI: The store's UI is both elegant and responsive, thanks to the power of Tailwind CSS. Customizing the design to meet the client's vision was a breeze, and the end result is a visually appealing, mobile-first shopping experience.",
+
+        "Product Catalog: Divine Market boasts a vast and diverse product catalog, organized into categories and subcategories for easy navigation. Each product page features high-quality images, detailed descriptions, and pricing information.",
+
+        "User Authentication and Accounts: To enhance the shopping experience, users can create accounts, log in, and manage their profiles. This feature allows for personalized recommendations and an efficient checkout process.",
+
+        "Shopping Cart and Checkout: Shoppers can easily add items to their carts, review their selections, and complete the checkout process seamlessly. Payment processing is secure and user-friendly, ensuring a high conversion rate."
       ],
       "challenges": [
-        "Ensuring the website is fully responsive and works well on all devices",
-        "Integrating a contact form that sends emails to my email address",
-        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+        "Performance Optimization: Ensuring fast page loading and responsiveness, especially as the product catalog grew, posed a significant challenge. I tackled this by optimizing images, using Next.js's server-side rendering, and implementing lazy loading.",
+
+        "Payment Integration: Integrating Stripe for secure and seamless payment processing required meticulous attention to detail. I overcame this challenge through thorough testing and implementation of best practices."
       ],
-      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "results": "Outstanding Performance: Despite the growing product catalog, Divine Market maintains exceptional performance, with pages loading in milliseconds. This performance boost has led to increased user engagement and conversion rates. Secure and Efficient Payments: Customers trust Divine Market for its secure payment processing, resulting in a high rate of successful transactions and satisfied users.",
       "future_improvements": [
         "Add more projects to the Projects page",
         "Update the website regularly with new skills and experience",
@@ -41,13 +47,14 @@
     },
     {
       "id": "2",
-      "title": "Clinic Appointment App",
-      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
-      "path": "/asserts/projects/2.png",
+      "title": "Panaverse Dao App",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
+      "path": "/asserts/projects/9.png",
       "date": "Mar 16, 2022",
       "type": "website",
-      "subType": ["frontend", "Backend"],
-      "tools": ["React.js", "", "HTML", "CSS"],
+      "link": "https://paraverse-dao.vercel.app/",
+      "subType": ["frontend", "Backend", "UI/UX"],
+      "tools": ["Next Js", "Chakra Ui", "TailwindCSS", "CSS"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
       "features": [
         "Home page with an introduction and links to my social media profiles",
@@ -57,7 +64,6 @@
         "Responsive design that works on desktop, tablet, and mobile devices",
         "Custom design with clean and modern typography, color scheme, and layout"
       ],
-
       "challenges": [
         "Ensuring the website is fully responsive and works well on all devices",
         "Integrating a contact form that sends emails to my email address",
@@ -73,11 +79,12 @@
     },
     {
       "id": "3",
-      "title": "Quiz Trivia",
-      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
-      "path": "/asserts/projects/3.png",
+      "title": "IMDb Clone App",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
+      "path": "/asserts/projects/8.png",
       "date": "Mar 16, 2022",
       "type": "website",
+      "link": "imdb-clone-2-g1qsfr6nb-ridarafisyed.vercel.app",
       "subType": ["frontend"],
       "tools": ["React Js", "JavaScript", "HTML", "CSS"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
@@ -104,13 +111,14 @@
     },
     {
       "id": "4",
-      "title": "Aurteck website",
+      "title": "Karobar Technologies",
       "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
-      "path": "/asserts/projects/4.png",
-      "date": "Mar 16, 2022",
+      "path": "/asserts/projects/11.png",
+      "date": "May 21, 2023",
       "type": "website",
+      "link": "https://karobartechnologies.com/",
       "subType": ["frontend"],
-      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "tools": ["Next Js", "React Js", "PostgreSQL"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
       "features": [
         "Home page with an introduction and links to my social media profiles",
@@ -135,11 +143,12 @@
     },
     {
       "id": "5",
-      "title": "Go Green",
+      "title": "Aurteck website",
       "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
-      "path": "/asserts/projects/5.png",
+      "path": "/asserts/projects/4.png",
       "date": "Mar 16, 2022",
       "type": "website",
+      "link": "https://aurteck.com",
       "subType": ["frontend"],
       "tools": ["React Js", "JavaScript", "HTML", "CSS"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
@@ -164,15 +173,17 @@
         "Improve the website's SEO to increase visibility and search engine ranking"
       ]
     },
+
     {
       "id": "6",
-      "title": "Auto wash web site",
+      "title": "Doctor Profile website",
       "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
-      "path": "/asserts/projects/6.png",
+      "path": "/asserts/projects/3.png",
       "date": "Mar 16, 2022",
       "type": "website",
-      "subType": ["frontend"],
-      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "link": "doctorsyedaali.netlify.app",
+      "subType": ["frontend", "Backend"],
+      "tools": ["React.js", "", "HTML", "CSS"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
       "features": [
         "Home page with an introduction and links to my social media profiles",
@@ -182,6 +193,7 @@
         "Responsive design that works on desktop, tablet, and mobile devices",
         "Custom design with clean and modern typography, color scheme, and layout"
       ],
+
       "challenges": [
         "Ensuring the website is fully responsive and works well on all devices",
         "Integrating a contact form that sends emails to my email address",
@@ -197,9 +209,10 @@
     },
     {
       "id": "7",
-      "title": "School Management System",
+      "title": "Quiz Trivia",
       "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
-      "path": "/asserts/projects/7.png",
+      "path": "/asserts/projects/4.png",
+      "link": "https://trivia-quiz-app-rrs.netlify.app",
       "date": "Mar 16, 2022",
       "type": "website",
       "subType": ["frontend"],
@@ -228,11 +241,12 @@
     },
     {
       "id": "8",
-      "title": "IMDb Clone App",
-      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
-      "path": "/asserts/projects/8.png",
+      "title": "Go Green",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/5.png",
       "date": "Mar 16, 2022",
       "type": "website",
+      "link": "https://gogreenpak.netlify.app/",
       "subType": ["frontend"],
       "tools": ["React Js", "JavaScript", "HTML", "CSS"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
@@ -259,13 +273,46 @@
     },
     {
       "id": "9",
-      "title": "Panaverse Dao App",
-      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using Next.js.",
-      "path": "/asserts/projects/9.png",
+      "title": "Auto wash web site",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/6.png",
       "date": "Mar 16, 2022",
       "type": "website",
-      "subType": ["frontend", "Backend", "UI/UX"],
-      "tools": ["Next Js", "Chakra Ui", "TailwindCSS", "CSS"],
+      "link": "https://brisky-moters.netlify.app",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
+      "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
+      "features": [
+        "Home page with an introduction and links to my social media profiles",
+        "About page with information about my education, skills, and experience",
+        "Projects page with a list of my latest projects, including project descriptions, screenshots, and links",
+        "Contact page with a contact form and links to my email and LinkedIn profiles",
+        "Responsive design that works on desktop, tablet, and mobile devices",
+        "Custom design with clean and modern typography, color scheme, and layout"
+      ],
+      "challenges": [
+        "Ensuring the website is fully responsive and works well on all devices",
+        "Integrating a contact form that sends emails to my email address",
+        "Designing a visually appealing and professional-looking website that showcases my skills and projects"
+      ],
+      "results": "My Portfolio Website has allowed me to showcase my skills, experience, and projects to potential employers and clients. The website has received positive feedback for its clean and modern design, and has helped me to secure several freelance projects and job interviews.",
+      "future_improvements": [
+        "Add more projects to the Projects page",
+        "Update the website regularly with new skills and experience",
+        "Integrate Google Analytics to track website traffic and user behavior",
+        "Improve the website's SEO to increase visibility and search engine ranking"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "School Management System",
+      "shortDescription": "Experienced in developing dynamic and interactive user interfaces using React.js.",
+      "path": "/asserts/projects/7.png",
+      "date": "Mar 16, 2022",
+      "type": "website",
+      "link": "#",
+      "subType": ["frontend"],
+      "tools": ["React Js", "JavaScript", "HTML", "CSS"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
       "features": [
         "Home page with an introduction and links to my social media profiles",

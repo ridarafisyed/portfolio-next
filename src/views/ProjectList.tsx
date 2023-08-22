@@ -4,17 +4,18 @@ import React from "react";
 
 const ProjectList = ({ project }: any) => {
   return (
-    <div className="flex gap-3 items-left justify-left space-x-2 ">
-      <div className="">
+    <div className="grid gap-3 lg:grid-cols-2 md:grid-cols-1">
+      {/* image of project */}
+      <div className="image">
         <Image
           className="rounded-lg"
           src={project.path}
-          height={350}
           width={450}
+          height={350}
           alt={project.name}
         />
       </div>
-      <div className="">
+      <div className="description">
         <article className="flex max-w-xl flex-col items-start justify-between">
           <div className="flex items-center gap-x-4 text-xs space-x-2 space-y-2">
             <time dateTime="2020-03-16" className="text-zinc-200">

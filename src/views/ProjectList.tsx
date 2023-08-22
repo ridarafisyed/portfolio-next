@@ -4,19 +4,19 @@ import React from "react";
 
 const ProjectList = ({ project }: any) => {
   return (
-    <div className="grid gap-3 lg:grid-cols-2 md:grid-cols-1">
+    <div className=" grid gap-2 grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
       {/* image of project */}
-      <div className="image">
+      <div className="">
         <Image
-          className="rounded-lg"
+          className="rounded-t-xl"
           src={project.path}
           width={450}
           height={350}
           alt={project.name}
         />
       </div>
-      <div className="description">
-        <article className="flex max-w-xl flex-col items-start justify-between">
+      <div className=" col-span-2">
+        <div className="flex max-w-xl flex-col items-start justify-between">
           <div className="flex items-center gap-x-4 text-xs space-x-2 space-y-2">
             <time dateTime="2020-03-16" className="text-zinc-200">
               {project.date}
@@ -59,7 +59,7 @@ const ProjectList = ({ project }: any) => {
               </Link>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   );

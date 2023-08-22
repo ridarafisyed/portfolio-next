@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {AiOutlineArrowLeft} from "react-icons/ai"
 
 const ProjectDetailPage = ({ project }: any) => {
   return (
@@ -10,7 +11,7 @@ const ProjectDetailPage = ({ project }: any) => {
 
         <div className=" w-full my-16 py-10 ">
            <div> 
-        <Link href="portfolio"> {"<-"}</Link>
+        <Link href="portfolio" className=""> {<AiOutlineArrowLeft/>}</Link>
       </div>
           <h2 className="mt-3 text-4xl font-semibold leading-6 text-yellow-500  group-hover:text-yellow-500 ">
             <a href="#">
@@ -31,7 +32,7 @@ const ProjectDetailPage = ({ project }: any) => {
             <div className="col-span-8 space-x-2 space-y-4">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <div className="flex items-center mt-5  gap-x-4 text-xs">
+                  <div className="flex items-center mt-5 gap-x-6 text-xs">
                     <time dateTime="2020-03-16" className="text-zinc-200">
                       {project.date}
                     </time>
@@ -42,16 +43,22 @@ const ProjectDetailPage = ({ project }: any) => {
                     </a>
                     <a
                       href="#"
-                      className="relative z-10 rounded-full bg-zinc-600 px-3 py-1.5 font-medium text-zinc-200 hover:bg-gray-100">
-                      {project.subType}
+                      className="relative z-10 rounded-full bg-zinc-600 px-3 py-1.5 gap-x-3 font-medium text-zinc-200 hover:bg-gray-100">
+                      {project.subType.map((type: string, index: number) => (
+                        <span
+                          className="relative z-10 rounded-full bg-zinc-600 px-3 py-1.5 font-medium text-zinc-200 hover:bg-gray-100"
+                          key={index}>
+                          {type}{" "}
+                        </span>
+                      ))}
                     </a>
                   </div>
-                  <div className="mt-5 text-sm leading-6 text-zinc-200">
-                    <h4 className="text-xl text-yellow-600  ">Overview:</h4>
-                    {project.overview}
+                  <div className="mt-5 text-sm leading-6">
+                    <h4 className="text-xl text-yellow-500">Overview:</h4>
+                     <p className="text-zinc-200"> {project.overview}</p>
                   </div>
-                  <div className="mt-5 text-sm leading-6 text-zinc-200">
-                    <h4 className="text-xl text-yellow-600 ">Challenges:</h4>
+                  <div className="mt-5 text-sm leading-6 ">
+                    <h4 className="text-xl text-yellow-500">Challenges:</h4>
                     <ul className="gap-x-8 gap-y-16">
                       {project.challenges.map(
                         (feature: string, index: number) => (
@@ -91,7 +98,7 @@ const ProjectDetailPage = ({ project }: any) => {
 
                   <div className="mt-5 text-sm leading-6 text-zinc-200">
                     <h4 className="text-xl text-yellow-500">Result:</h4>
-                    {project.results}
+                    <p>{project.results}</p>
                   </div>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">

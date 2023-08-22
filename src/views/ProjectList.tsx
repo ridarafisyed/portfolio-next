@@ -17,7 +17,7 @@ const ProjectList = ({ project }: any) => {
       <div className="">
         <article className="flex max-w-xl flex-col items-start justify-between">
           <div className="flex items-center gap-x-4 text-xs space-x-2 space-y-2">
-            <time dateTime="2020-03-16" className="text-zinc-200 ">
+            <time dateTime="2020-03-16" className="text-zinc-200">
               {project.date}
             </time>
             <a
@@ -37,7 +37,7 @@ const ProjectList = ({ project }: any) => {
           </div>
           <div className="group relative">
             <h3 className="mt-3 text-lg font-semibold leading-6 text-zinc-200 group-hover:text-zinc-300">
-              <a href="#">
+              <a href={`portfolio/${project.id}`}>
                 <span className="absolute inset-0"></span>
                 {project.title}
               </a>

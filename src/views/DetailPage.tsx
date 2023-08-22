@@ -5,8 +5,13 @@ import React from "react";
 const ProjectDetailPage = ({ project }: any) => {
   return (
     <section className="text-white body-font overflow-hidden" id="about">
+     
       <div className="container mx-auto flex px-5 py-24 items-left justify-left flex-col">
+
         <div className=" w-full my-16 py-10 ">
+           <div> 
+        <Link href="portfolio"> {"<-"}</Link>
+      </div>
           <h2 className="mt-3 text-4xl font-semibold leading-6 text-yellow-500  group-hover:text-yellow-500 ">
             <a href="#">
               <span className="absolute inset-0 "></span>
@@ -15,11 +20,11 @@ const ProjectDetailPage = ({ project }: any) => {
           </h2>
           <div className="grid grid-cols-2 gap-x-8 gap-y-16 w-full my-4 py-4">
             <div className="col-span-4">
-              <Image className="rounded-lg" src={project.path} alt="" />
+              <Image className="rounded-lg" width={500} height={450} src={project.path} alt="" />
               <div className=" max-w-xl flex flex-row mt-3 px-3 py-1.5 font-medium gap-4">
                 <Link href="#">GitHub </Link>
-                <Link href="#" className="text-yellow-500">
-                  Demo{" "}
+                <Link href={project.link} className="text-yellow-500">
+                  Demo
                 </Link>
               </div>
             </div>
@@ -41,10 +46,10 @@ const ProjectDetailPage = ({ project }: any) => {
                       {project.subType}
                     </a>
                   </div>
-                  <p className="mt-5 text-sm leading-6 text-zinc-200">
+                  <div className="mt-5 text-sm leading-6 text-zinc-200">
                     <h4 className="text-xl text-yellow-600  ">Overview:</h4>
                     {project.overview}
-                  </p>
+                  </div>
                   <div className="mt-5 text-sm leading-6 text-zinc-200">
                     <h4 className="text-xl text-yellow-600 ">Challenges:</h4>
                     <ul className="gap-x-8 gap-y-16">

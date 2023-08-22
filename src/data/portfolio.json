@@ -117,7 +117,7 @@
       "date": "May 21, 2023",
       "type": "website",
       "link": "https://karobartechnologies.com/",
-      "subType": ["frontend"],
+      "subType": ["frontend", "Backend", "UI/UX"],
       "tools": ["Next Js", "React Js", "PostgreSQL"],
       "overview": "My Portfolio Website is a personal website that showcases my skills, experience, and projects. The website is built using React.js and is designed to be responsive and user-friendly.",
       "features": [

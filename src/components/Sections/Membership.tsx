@@ -15,6 +15,21 @@ const Membership = () => {
               <div className="py-4 flex flex-wrap md:flex-nowrap">
                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                   <span className="font-semibold title-font text-yellow-500">
+                    Women Chamber of Commerce Lahore
+                  </span>
+                  <span className="mt-1 text-zinc-400 text-sm">
+                    Aug 2023 - Present
+                  </span>
+                </div>
+                <div className="md:flex-grow">
+                  <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
+                    Assosiate Member
+                  </h2>
+                </div>
+              </div>
+              <div className="py-4 flex flex-wrap md:flex-nowrap">
+                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span className="font-semibold title-font text-yellow-500">
                     TiE Lahore
                   </span>
                   <span className="mt-1 text-zinc-400 text-sm">

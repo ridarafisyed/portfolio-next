@@ -4,7 +4,7 @@ import React from "react";
 
 const ProjectList = ({ project }: any) => {
   return (
-    <div className=" grid gap-2 grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+    <div className="grid gap-2 grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
       {/* image of project */}
       <div className="">
         <Image
@@ -12,7 +12,7 @@ const ProjectList = ({ project }: any) => {
           src={project.path}
           width={450}
           height={350}
-          alt={project.name}
+          alt={`Project Image ${project.name}`}
         />
       </div>
       <div className=" col-span-2">

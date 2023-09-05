@@ -12,7 +12,7 @@ const Contact = () => {
               <a href="https://www.facebook.com/ridarsyed/" className="">
                <span className="text-yellow-500 font-bold text-xl"> f </span> Facebook
               </a>
-              <a href="https://www.linkedin.com/in/ridarafisyed/" className="">
+              <a href="www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ridarafisyed" className="">
                <span className="text-yellow-500 font-bold text-xl"> in </span> LinkedIn
               </a>
               <a href="mailto:ridarafisyed@gmail.com?Subject=Web%20Profile%20Requestgit" className="">

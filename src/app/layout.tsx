@@ -22,10 +22,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="ONWD4U7ux9eCUCRg3ysLYS_h3gBMfdHgj8EcJI_H63g" />
         
       </Head>
-      <html lang="en">
-        <body>
+      <html lang="en" >
+        <body suppressHydrationWarning={true}>
           <Layout>{children}</Layout>
         </body>
       </html>

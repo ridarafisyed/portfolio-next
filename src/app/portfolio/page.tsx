@@ -1,10 +1,14 @@
-import React from 'react'
-
+import React, {Suspense} from 'react'
+import Loading from './loading'
 import Portfolio from '@/views/Portfolio'
 
 const PortfolioPage = () => {
   return (
-    <div><Portfolio/></div>
+    <div>
+      <Suspense fallback={<Loading />}>
+        <Portfolio />
+      </Suspense>
+    </div>
   )
 }
 

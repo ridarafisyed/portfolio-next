@@ -1,0 +1,16 @@
+{
+    "degrees":[
+        {
+            "institute":"University of Sargodha Pakistan",
+            "title":"MS - Computer Science",
+            "year":"2019",
+            "description":"I completed advanced courses in computer science and developed an emotion detection system using facial expression for my thesis. This project enhanced my skills in computer vision techniques, algorithm development, and analytical problem-solving."
+        },
+        {
+            "institute":"Virtual University Of Pakistan",
+            "title":"Master's in Computer Sciences",
+            "year":"2014",
+            "description":"I completed a range of computer science courses, including programming, data communications, software engineering, web engineering, and more. For my final project, I developed an online chess game, gaining experience in software development and design, database management, and artificial intelligence."
+        }
+    ]
+}

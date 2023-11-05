@@ -23,7 +23,7 @@ const ProjectDetailPage = ({ project }: any) => {
           </h2>
           <SimpleGrid >
             <Box >
-              <Image className="rounded-lg" width={500} height={450} src={project.path} alt="" />
+              <Image className="rounded-lg" width={500} height={450} style={{ width: "auto", height: "auto" }}  src={project.path} alt={project.title}  loading="eager" priority />
               <div className=" max-w-xl flex flex-row mt-3 px-3 py-1.5 font-medium gap-4">
                 <Link href="#" className="">GitHub </Link>
                 <Link href={project.link} className="text-[#ffc000]">

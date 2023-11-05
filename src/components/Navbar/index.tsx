@@ -130,7 +130,8 @@ const DesktopNav = () => {
               <LinkItem
                 as={Link}
                 href={navItem.href ?? "#"}
-                color={useColorModeValue("gray.500", "gray.200")}
+                color={colorMode ? "gray.500": "gray.200"}
+                // color={useColorMode("gray.500", "gray.200")}
                 fontSize={"sm"}
                 fontWeight={"500"}
                 _hover={{

@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../../data/portfolio.json";
+import data from "@/data/portfolio.json";
 import DetailPage from "@/components/Portfolio/DetailPage";
 
 async function CourseDetail({ params }: any) {

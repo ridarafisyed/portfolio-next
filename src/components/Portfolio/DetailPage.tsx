@@ -6,7 +6,6 @@ import React from "react";
 import {AiOutlineArrowLeft} from "react-icons/ai"
 
 const ProjectDetailPage = ({ project }: any) => {
-  
   const {colorMode} = useColorMode()
   return (
     <div>
@@ -26,7 +25,7 @@ const ProjectDetailPage = ({ project }: any) => {
             <Box >
               <Image className="rounded-lg" width={500} height={450} src={project.path} alt="" />
               <div className=" max-w-xl flex flex-row mt-3 px-3 py-1.5 font-medium gap-4">
-                <Link href="#">GitHub </Link>
+                <Link href="#" className="">GitHub </Link>
                 <Link href={project.link} className="text-[#ffc000]">
                   Demo
                 </Link>
@@ -41,27 +40,25 @@ const ProjectDetailPage = ({ project }: any) => {
                     </time>
                     <a
                       href="#"
-                      className={`relative z-10 rounded-full bg-[#ffc000] px-3 py-1.5 font-medium ${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`}>
+                      className={`relative z-10 rounded-full bg-[#ffc000] px-3 py-1.5 font-medium text-white`}>
                       {project.type}
                     </a>
-                    <a
-                      href="#"
-                      className={`relative z-10 rounded-full bg-[#ffc000] px-3 py-1.5 font-medium ${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`}>
+                    <a href="#" className="gap-4">
                       {project.subType.map((type: string, index: number) => (
                         <span
-                          className={`relative z-10 rounded-full bg-[#ffc000] px-3 py-1.5 font-medium ${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`}
+                          className={`relative z-10  rounded-full bg-[#ffc000] px-3 mx-2 py-1.5 font-medium text-white hover:text-[#ffc000] hover:bg-white`}
                           key={index}>
-                          {type}{" "}
+                          {type}
                         </span>
                       ))} 
                     </a>
                   </div>
                   <div className="mt-5 text-sm leading-6">
-                    <h4 className="text-xl text-[#ffc000]">Overview:</h4>
+                    <h4 className="text-lg text-[#ffc000] font-semibold">Overview:</h4>
                      <p className={`${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`}> {project.overview}</p>
                   </div>
                   <div className="mt-5 text-sm leading-6 ">
-                    <h4 className="text-xl text-[#ffc000]">Challenges:</h4>
+                    <h4 className="text-lg text-[#ffc000] font-semibold">Challenges:</h4>
                     <ul className="gap-x-8 gap-y-16">
                       {project.challenges.map(
                         (feature: string, index: number) => (
@@ -73,11 +70,11 @@ const ProjectDetailPage = ({ project }: any) => {
                     </ul>
                   </div>
                   <div className="mt-5  text-sm leading-6 text-zinc-200">
-                    <h4 className="text-xl text-[#ffc000] ">Features:</h4>
+                    <h4 className="text-lg text-[#ffc000] font-semibold ">Features:</h4>
                     <ul className="gap-x-8 gap-y-16">
                       {project.features.map(
                         (feature: string, index: number) => (
-                          <li className={`${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`} key={index}>
+                          <li className={`text-md ${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`} key={index}>
                             - {feature}
                           </li>
                         )
@@ -85,13 +82,13 @@ const ProjectDetailPage = ({ project }: any) => {
                     </ul>
                   </div>
                   <div className="mt-5  text-sm leading-6 text-zinc-200">
-                    <h4 className="text-xl text-[#ffc000]">
+                    <h4 className="text-lg text-[#ffc000] font-semibold">
                       Future Improvements:
                     </h4>
                     <ul className="gap-x-8 gap-y-16">
                       {project.future_improvements.map(
                         (feature: string, index: number) => (
-                          <li className={`${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`} key={index}>
+                          <li className={`text-md ${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`} key={index}>
                             - {feature}
                           </li>
                         )
@@ -100,19 +97,19 @@ const ProjectDetailPage = ({ project }: any) => {
                   </div>
 
                   <div className="mt-5 text-sm leading-6 text-zinc-200">
-                    <h4 className="text-xl text-[#ffc000]">Result:</h4>
-                    <p className={`${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`}>{project.results}</p>
+                    <h4 className="text-lg text-[#ffc000] font-semibold">Result:</h4>
+                    <p className={`text-md ${colorMode === "dark"? "text-zinc-200": "text-zinc-500"}`}>{project.results}</p>
                   </div>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
                   <div className="text-sm leading-6">
                     <div className="flex items-center mt-5  gap-x-4 text-xs">
-                      <h4 className=" text-lg text-[#ffc000] ">
+                      <h4 className=" text-lg font-semibold text-[#ffc000] ">
                         Technologies:
                       </h4>
                       {project.tools.map((tool: string, index: number) => (
                         <span
-                          className="relative z-10 rounded-full bg-zinc-600 px-3 py-1.5 font-medium text-zinc-200 hover:bg-[#ffc000] hover:text-white"
+                          className="relative z-10 rounded-full bg-zinc-600 hover:bg-[#ffc000] px-3 py-1.5 font-medium text-white"
                           key={index}>
                           {tool}
                         </span>

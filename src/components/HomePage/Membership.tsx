@@ -3,8 +3,8 @@ import React from 'react'
 const Membership = () => {
   return (
     <section className="text-white body-font overflow-hidden">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-left flex-col">
-        <div className="lg:w-2/3 w-full my-16 py-10">
+      <div className="container mx-auto flex px-5 py-8 items-center justify-left flex-col">
+        <div className="lg:w-2/3 w-full my-16 py-4">
           <h1 className="text-center title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
             Professional Membership
           </h1>

@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { Grid, GridItem } from "@chakra-ui/react";
 
 
 const Infro = () => {
   return (
     <div className=" text-white body-font py-2 mx-auto"  id="Intro">
-      <div className="grid grid-cols-2 px-4 py-4 mx-4 justify-center">
-        <div className="lg:w-2/3 w-full my-16 mx-auto py-10 px-4">
+      <Grid templateColumns={{ base: '1fr', md: '1fr 1fr' }} gap={4} className="grid grid-cols-2 px-4 py-4 mx-4 justify-center">
+        <GridItem order={2} className="lg:w-2/3 w-full my-16 mx-auto py-10 px-4">
           <h1 className="title-font sm:text-4xl text-4xl my-6 font-medium text-yellow-500">
             Rida R. Syed
           </h1>
@@ -35,16 +36,16 @@ const Infro = () => {
               </svg>
             </a>
           </div>
-        </div>
-        <div className="justify-center mx-auto py-8">
+        </GridItem>
+        <GridItem order={1} className="justify-center mx-auto py-8">
           <Image
             src={"/asserts/profile_pic.png"}
             alt="profile_pic"
             width={350}
             height={300}
           />
-        </div>
-      </div>
+        </GridItem>
+      </Grid>
     </div>
   );
 };

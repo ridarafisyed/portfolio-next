@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import ContentSide from "@/components/Sections";
+import ContentSide from "@/components/HomePage";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);

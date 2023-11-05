@@ -29,7 +29,7 @@ export default function RootLayout({
         
       </Head>
       <html lang="en">
-        <body suppressHydrationWarning={true}>
+        <body suppressHydrationWarning={true} className="">
           <ChakraWrapper>
             <Navbar/>
             {children}

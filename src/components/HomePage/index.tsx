@@ -16,7 +16,7 @@ const ContentSide = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <div className={`${colorMode === "dark"? "bg-[#0d1117] text-white":"bg-slate-50  text-[#0d1117]"} `}>
+    <div >
       <section id="hero">
         <Intro />
       </section>

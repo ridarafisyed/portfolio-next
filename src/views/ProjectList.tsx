@@ -1,8 +1,10 @@
+import { useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const ProjectList = ({ project }: any) => {
+  const {colorMode} = useColorMode()
   return (
     <div className="grid gap-2 grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
       {/* image of project */}

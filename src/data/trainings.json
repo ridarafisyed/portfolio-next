@@ -1,0 +1,27 @@
+{
+    "trainings":[
+        {
+            "company":"PIAIC",
+            "year":"Present",
+            "name":"Metaverse and Web 3.0",
+            "description":""
+        }, {
+            "company":"PIAIC",
+            "year":"2023",
+            "name":"Artificial Intelligence",
+            "description":""
+        },
+        {
+            "company":"PIAIC",
+            "year":"2023",
+            "name":"Cloud Native and Mobile Web Computing Specialist",
+            "description":""
+        },
+        {
+            "company":"PIAIC",
+            "year":"2020",
+            "name":"Freelance and Remote Work Bootcamp",
+            "description":"Web Apps including e-commerce apps using React, Gatsby.js, Redux, GraphQL, Git, GitHub, GitHub Actions, JamStack AWS serverless and Figma."
+        }
+    ]
+}

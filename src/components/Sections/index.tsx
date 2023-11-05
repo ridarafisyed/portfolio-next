@@ -8,13 +8,15 @@ import Contact from "./Contact";
 import Trainings from "./Training";
 import Publication from "./Publication";
 import Education from "./Education";
-import { Certificate } from "crypto";
+import { useColorMode } from "@chakra-ui/react";
 import Certification from "./Certification";
 import Membership from "./Membership";
 
 const ContentSide = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <div className="bg-zinc-800 text-white">
+    <div className={`${colorMode === "dark"? "bg-[#0d1117] text-white":"bg-slate-50  text-[#0d1117]"} `}>
       <section id="hero">
         <Intro />
       </section>

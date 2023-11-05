@@ -3,13 +3,13 @@ import React from "react";
 const Education = () => {
   return (
     <section className="text-white body-font overflow-hidden" id="education">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-left flex-col">
-        <div className="lg:w-2/3 w-full my-16 py-10">
+      <div className="container mx-auto flex px-5 py-8 items-center justify-left flex-col">
+        <div className="lg:w-2/3 w-full my-16 py-4">
           <h1 className="text-center title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
             Education
           </h1>
-          <div className="container py-14 mx-auto">
-            <div className="my-4 divide-y-2 divide-gray-100">
+          <div className="container py-4 mx-auto">
+            <div className="my-4 divide-y-2 divide-gray-700">
               {/* item start here */}
               <div className="py-4 flex flex-wrap md:flex-nowrap">
                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -22,7 +22,7 @@ const Education = () => {
                   <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
                     MS - Computer Science
                   </h2>
-                  <p className="leading-relaxed text-zinc-400">
+                  <p className="leading-relaxed text-zinc-400 text-justify">
                     I completed advanced courses in computer science and
                     developed an emotion detection system using facial
                     expression for my thesis. This project enhanced my skills in
@@ -44,7 +44,7 @@ const Education = () => {
                   <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
                     Master&apos;s in Computer Sciences
                   </h2>
-                  <p className="leading-relaxed text-zinc-400">
+                  <p className="leading-relaxed text-zinc-400 text-justify">
                     I completed a range of computer science courses, including
                     programming, data communications, software engineering, web
                     engineering, and more. For my final project, I developed an

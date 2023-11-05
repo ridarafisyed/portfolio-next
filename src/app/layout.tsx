@@ -1,6 +1,7 @@
 import "./globals.css";
 import Head from "next/head";
-import Layout from "@/utils/Layout";
+import ChakraWrapper from "@/layout/chakraWapper";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Rida Rafi Syed | FUll Stack Developer",
@@ -14,7 +15,9 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+  }) {
+  
+  
   return (
     <>
       <Head>
@@ -25,9 +28,12 @@ export default function RootLayout({
         <meta name="google-site-verification" content="ONWD4U7ux9eCUCRg3ysLYS_h3gBMfdHgj8EcJI_H63g" />
         
       </Head>
-      <html lang="en" >
+      <html lang="en">
         <body suppressHydrationWarning={true}>
-          <Layout>{children}</Layout>
+          <ChakraWrapper>
+            <Navbar/>
+            {children}
+          </ChakraWrapper>
         </body>
       </html>
     </>

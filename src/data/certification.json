@@ -1,0 +1,11 @@
+{
+    "certifications":[
+       
+        {
+            "company":"Microsoft Technology Associate",
+            "year":"Certified 2021",
+            "name":" Introduction to Programming Using Python",
+            "bagde": "/asserts/badges/mta.png"
+        }
+    ]
+}

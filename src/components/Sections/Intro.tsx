@@ -1,26 +1,27 @@
 import React from "react";
 import Image from "next/image";
 
+
 const Infro = () => {
   return (
-    <section className=" text-white body-font py-8" id="Intro">
-      <div className="container grid grid-cols-2 gap-4 mx-auto px-5 py-24 items-center justify-center flex-col">
-        <div className="lg:w-2/3 w-full my-16 py-10">
+    <div className=" text-white body-font py-2 mx-auto"  id="Intro">
+      <div className="grid grid-cols-2 px-4 py-4 mx-4 justify-center">
+        <div className="lg:w-2/3 w-full my-16 mx-auto py-10 px-4">
           <h1 className="title-font sm:text-4xl text-4xl my-6 font-medium text-yellow-500">
             Rida R. Syed
           </h1>
-          <h1 className="title-font sm:text-2xl text-xl my-6 font-medium uppercase">
+          <h1 className="title-font sm:text-md text-yellow-500 text-xl my-6 font-medium uppercase">
             software engineer
           </h1>
-          <div className="justify-center text-zinc-400 sx:text-md text-md font-base">
-            <p>
+          <div className="justify-center text-zinc-400 sx:text-md text-sm font-base">
+            <p className="text-justify">
               Hello! I am Software Developer from Pakistan, Lahore. Specialized
-              in software & web application design and development, also I am
+              in Software & Web application design and development, also I am
               good at graphic designing and illustration.
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center mx-auto mt-16 text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-transparent hover:text-yellow-600 hover:border  border-yellow-600 rounded text-lg ">
+              className="inline-flex items-center mx-auto mt-16 uppercase font-semibold text-white bg-[#ffc000] border-2 py-2 px-8 focus:outline-none hover:bg-transparent hover:text-[#ffc000]  hover:border-2  border-[#ffc000] rounded text-md ">
               Contact Me
               <svg
                 fill="none"
@@ -35,16 +36,16 @@ const Infro = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className="justify-center mx-auto py-8">
           <Image
             src={"/asserts/profile_pic.png"}
             alt="profile_pic"
-            width={400}
+            width={350}
             height={300}
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import servicesData from "../../data/services.json";
+import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 type ServiceType = {
   name: string;
@@ -13,12 +14,13 @@ type ServicesDataType = {
 };
 const icon = "&#xe2bf;";
 const Services = () => {
+  const { colorMode } = useColorMode();
   const { services } = servicesData as ServicesDataType;
   return (
-    <section className=" body-font py-8">
-      <div className="container mx-auto flex px-3 py-8 items-center justify-center flex-col">
-        <div className="text-center lg:w-2/3 w-full my-16 py-10">
-          <h1 className="title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
+    <section className="body-font py-8">
+      <div className="container mx-auto flex px-3 py-4 items-center justify-center flex-col">
+        <div className="text-center lg:w-2/3 w-full my-16 py-4">
+          <h1 className="title-font sm:text-4xl text-3xl my-4 font-medium text-yellow-500">
             Services
           </h1>
 
@@ -29,20 +31,21 @@ const Services = () => {
                 key={index}>
                 <div className="shrink-0">
                   <Image
-                    className="mx-auto"
+                    className="mx-auto  fill-yellow-500"
                     src={service.path}
                     alt={service.name}
                     width={60}
-                    height={60}
+                    height={60
+                    }
                   />
                 </div>
                 <div>
-                  <h2 className="text-yellow-500 text-lg title-font font-medium mb-3">
+                  <h2 className={`text-lg title-font font-medium mb-3 capitalize py-3 ${colorMode === "dark"? "text-zinc-300":"text-zinc-500"}`}>
                     {service.name}
                   </h2>
-                  <p className="leading-relaxed text-base">
+                  {/* <p className="leading-relaxed text-base">
                     {service.description}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

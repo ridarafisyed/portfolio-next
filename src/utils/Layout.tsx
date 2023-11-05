@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider as NextThemeProvider } from "next-themes";
+import type { ThemeProviderProps } from "next-themes/dist/types";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children, ...props }:  ThemeProviderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,12 +23,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     };
   }, []);
   return (
-    <div className="relative h-screen">
-      <Navbar isScrolled={isScrolled} />
-      <div className="bg-zinc-100 dark:bg-gray-600 w-64 main-page"></div>
-      <div className="flex-1 flex overflow-hidden">
+    <NextThemeProvider {...props}>
+    <div className="h-screen ">
+      <Navbar/>
+      <div className="flex-1 flex overflow-hidden justify-center items-center">
         <div className="flex-1 overflow-y-scroll">{children}</div>
       </div>
-    </div>
+    </div></NextThemeProvider>
   );
 }

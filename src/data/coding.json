@@ -12,7 +12,7 @@
     { "language": "C#", "score": 75 },
     { "language": "Javascript", "score": 97 }
   ],
-  "Services": [
+  "services": [
     { "language": "Web App Development", "score": 95 },
     { "language": "Mobile App Development", "score": 75 },
     { "language": "Desktop App Development", "score": 97 },

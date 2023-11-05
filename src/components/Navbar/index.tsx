@@ -1,98 +1,316 @@
-import { useState } from "react";
+"use client";
+import {
+  Box,
+  Flex,
+  Text,
+  IconButton,
+  Button,
+  Stack,
+  Collapse,
+  Icon,
+  Link as LinkItem,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  useColorModeValue,
+  useColorMode,
+  useBreakpointValue,
+  useDisclosure,
+} from "@chakra-ui/react";
 import Link from "next/link";
 
-type NavbarProps = {
-  isScrolled: boolean;
-};
+import {
+  HamburgerIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+} from "@chakra-ui/icons";
+import ThemeSwitchButton from "@/components/ThemeSwitchButton";
+import {NavItem} from "@/utils/interfaces"
+import { usePathname } from 'next/navigation'
 
-function Navbar({ isScrolled }: NavbarProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//  
+export default function WithSubnavigation() {
+  const { isOpen, onToggle } = useDisclosure();
+  const { colorMode } = useColorMode();
+  
+
 
   return (
-    <div
-      className={`fixed w-full z-50 text-white ${
-        isScrolled ? "bg-zinc-800 shadow-md" : "bg-transparent"
-      }`}>
-      <div className="container mx-auto px-4 py-4 md:px-6 md:py-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="font-bold text-yellow-500 text-2xl">RS</span>
-        </Link>
-        <div className="md:hidden">
-          <button
-            type="button"
-            className="block text-zinc-200 hover:text-gray-600 focus:text-zinc-200 focus:outline-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? (
-              <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M18.2929 5.29289C18.6834 4.90237 19.3166 4.90237 19.7071 5.29289L20.7071 6.29289C21.0976 6.68342 21.0976 7.31658 20.7071 7.70711L14.4142 14L20.7071 20.2929C21.0976 20.6834 21.0976 21.3166 20.7071 21.7071L19.7071 22.7071C19.3166 23.0976 18.6834 23.0976 18.2929 22.7071L12 16.4142L5.70711 22.7071C5.31658 23.0976 4.68342 23.0976 4.29289 22.7071L3.29289 21.7071C2.90237 21.3166 2.90237 20.6834 3.29289 20.2929L9.58579 14L3.29289 7.70711C2.90237 7.31658 2.90237 6.68342 3.29289 6.29289L4.29289 5.29289C4.68342 4.90237 5.31658 4.90237 5.70711 5.29289L12 11.5858L18.2929 5.29289Z"
-                />
-              </svg>
-            ) : (
-              <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M4 6h16v2H4V6zm0 6h16v2H4v-2zm0 6h16v2H4v-2z"
-                />
-              </svg>
-            )}
-          </button>
-        </div>
-        <nav
-          className={`md:flex md:items-center ${
-            isMenuOpen ? "block" : "hidden"
-          }`}>
-          <div className="md:hidden py-2">
-            <Link
-              href="/"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              About
-            </Link>
-            <Link
-              href="/portfolio"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              Portfolio
-            </Link>
-            <Link
-              href="/contact"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              Contact
-            </Link>
-          </div>
-          <div className="hidden md:flex md:items-center">
-            <Link
-              href="/"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              About
-            </Link>
-            <Link
-              href="/portfolio"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              Portfolio
-            </Link>
-            <Link
-              href="/contact"
-              className="block px-4 py-2 text-zinc-200 hover:bg-yellow-500">
-              Contact
-            </Link>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <Box>
+      <Flex
+        bg={useColorModeValue("white", "gray.800")}
+        color={useColorModeValue("yellow.600", "white")}
+        minH={"60px"}
+        py={{ base: 2 }}
+        px={{ base: 4 }}
+        borderBottom={1}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.900")}
+        align={"center"}>
+        <Flex
+          flex={{ base: 1, md: "auto" }}
+          ml={{ base: -2 }}
+          display={{ base: "flex", md: "none" }}>
+          <IconButton
+            onClick={onToggle}
+            icon={
+              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+            }
+            variant={"ghost"}
+            aria-label={"Toggle Navigation"}
+          />
+        </Flex>
+        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+          <Text
+            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            fontFamily={"heading"}
+          
+            fontWeight={"extrabold"}
+            className={colorMode ==="dark"? "bg-gray text-[#ffc000]": "bg_white text-[#ffc000]"}
+    
+            >
+            RS
+          </Text>
+
+          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+            <DesktopNav />
+          </Flex>
+        </Flex>
+
+        <Stack
+          flex={{ base: 1, md: 0 }}
+          justify={"flex-end"}
+          direction={"row"}
+          spacing={6}>
+          <Button display={{ base: "none", md: "inline-flex" }}  fontSize={"xs"} color={useColorModeValue("gray.600", "white")} as={"a"}>Call:  +92 (323) 199-0919</Button>
+
+          <Button
+            as={"a"}
+            display={{ base: "none", md: "inline-flex" }}
+            fontSize={"xs"}
+            fontWeight={600}
+            color={"white"}
+            bg={"#ffc000"}
+            href={"#"}
+            _hover={{
+              bg: "transparent",
+              color: "#ffc000"
+            }}
+            // className={`font-sm text-gray-200 bg-[#ffc000]${colorMode === "dark"? "":""}`}
+          >
+            Book Appointment
+          </Button>
+          <ThemeSwitchButton/>
+          
+        </Stack>
+      </Flex>
+
+      <Collapse in={isOpen} animateOpacity>
+        <MobileNav />
+      </Collapse>
+    </Box>
   );
 }
 
-export default Navbar;
+
+// 
+const DesktopNav = () => {
+  const pathname = usePathname()
+  const { colorMode } = useColorMode();
+  
+  return (
+    <Stack direction={"row"} spacing={4}>
+      {NAV_ITEMS.map((navItem) => (
+        <Box key={navItem.label} >
+          <Popover trigger={"hover"} placement={"bottom-start"}>
+            <PopoverTrigger>
+              <LinkItem
+                as={Link}
+                href={navItem.href ?? "#"}
+                color={"gray.400"}
+                fontSize={"sm"}
+                fontWeight={"500"}
+                _hover={{
+                  color: "#ffc000",
+                }}
+                _active={{
+                  color: "#ffc000"
+                }}
+                className={
+                  pathname === navItem.href
+                    ? "active" // Add a custom "active" class for active links
+                    : ""
+                }
+                 >
+                {navItem.label}
+              </LinkItem>
+            </PopoverTrigger>
+
+            {navItem.children && (
+              <PopoverContent
+                border={0}
+                boxShadow={"xl"}
+                className={colorMode === "dark" ? "bg-white" : "bg-yellow-400"}
+                p={4}
+                rounded={"xl"}
+                minW={"sm"}>
+                <Stack>
+                  {navItem.children.map((child) => (
+                    <DesktopSubNav key={child.label} {...child} />
+                  ))}
+                </Stack>
+              </PopoverContent>
+            )}
+          </Popover>
+        </Box>
+      ))}
+    </Stack>
+  );
+};
+
+const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  const { colorMode } = useColorMode()
+  
+  return (
+    <Link
+      role={"group"}
+      href={href ?? "#"}
+      className={`p-2 text-sm font-md block rounded-sm ${colorMode === "dark" ? "text-white hover:bg-gray-900" : "text-yellow-400 hover:bg-yellow-500"}`}
+     >
+      <Stack direction={"row"} align={"center"}>
+        <Box>
+          <Text
+            transition={"all .3s ease"}
+            _groupHover={{ color: "pink.400" }}
+            fontWeight={500}>
+            {label}
+          </Text>
+          <Text fontSize={"sm"}>{subLabel}</Text>
+        </Box>
+        <Flex
+          transition={"all .3s ease"}
+          transform={"translateX(-10px)"}
+          opacity={0}
+          _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
+          justify={"flex-end"}
+          align={"center"}
+          flex={1}>
+          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
+        </Flex>
+      </Stack>
+    </Link>
+  );
+};
+
+const MobileNav = () => {
+  return (
+    <Stack
+      bg={useColorModeValue("white", "gray.800")}
+      p={4}
+      display={{ md: "none" }}>
+      {NAV_ITEMS.map((navItem) => (
+        <MobileNavItem key={navItem.label} {...navItem} />
+      ))}
+      
+    </Stack>
+  );
+};
+
+const MobileNavItem = ({ label, children, href }: NavItem) => {
+  const pathname = usePathname()
+  const { isOpen, onToggle } = useDisclosure();
+  
+  return (
+    <Stack spacing={4} onClick={children && onToggle}>
+      <Flex
+        py={2}
+        as={Link}
+        href={href ?? "#"}
+        justify={"space-between"}
+        align={"center"}
+        _hover={{
+          textDecoration: "none",
+        }}>
+        <Text
+          fontWeight={600}
+          color={useColorModeValue("gray.600", "gray.200")}
+          _hover={{
+            color: "#ffc000"
+          }}
+          _active={{
+            color:"#ffc000"
+          }}
+          className={
+            pathname === href ? "active" : "" // Add "active" class for active links
+          }
+        >
+          {label}
+        </Text>
+        {children && (
+          <Icon
+            as={ChevronDownIcon}
+            transition={"all .25s ease-in-out"}
+            transform={isOpen ? "rotate(180deg)" : ""}
+            w={6}
+            h={6}
+          />
+        )}
+      </Flex>
+
+      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
+        <Stack
+          mt={2}
+          pl={4}
+          borderLeft={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.200", "gray.700")}
+          align={"start"}>
+          {children &&
+            children.map((child) => (
+              <LinkItem as={Link} key={child.label} py={2} href={child.href}>
+                {child.label}
+              </LinkItem>
+            ))}
+            <Link href={"#"}  as={"a"}>Call:  +92 (311) 626-7258</Link>
+
+            <LinkItem
+            as={Link}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              className={`bg-yellow-400`}
+              href={"#"}
+              _hover={{
+                bg: "yellow.300",
+              }}>
+              Book Appointment
+            </LinkItem>
+        </Stack>
+      </Collapse>
+    </Stack>
+  );
+};
+
+
+
+const NAV_ITEMS: Array<NavItem> = [
+  {
+        label: "Home",
+      href:"/"
+  },
+  {
+      label: "About",
+      href: "/about",
+    
+  },
+  {
+    label: "Portfolio",
+    href: "/portfolio",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];

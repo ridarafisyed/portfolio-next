@@ -1,0 +1,25 @@
+{
+    "experiances":[
+        {
+            "company":"AURTeck",
+            "year":"Jun 2019 - Present",
+            "position":"Senior Modren Full Stack Developer",
+            "description":"As a Senior Stack Developer, my responsibilities include developing and maintaining complex web applications using the stack, collaborating with cross-functional teams, mentoring and leading junior developers, identifying and resolving technical issues, staying up-to-date with emerging trends, contributing to software development methodologies, and ensuring security and compliance requirements are met while effectively communicating technical information to non-technical stakeholders."
+
+        },
+        {
+            "company":"Nexskill",
+            "year":"Oct 2023 - Present",
+            "position":"Instructor",
+            "description":"As a Data Science Instructor, I've developed and delivered engaging courses, mentored students in projects, assessed their performance, and collaborated with colleagues to enhance the program. My expertise includes data analysis, machine learning, data visualization, deep learning, and programming languages like Python, along with proficiency in data science tools and relevant computer science concepts."
+
+        },
+        {
+            "company":"PARWAN-E-NISA",
+            "year":"Aug 2022 - Jan 2023",
+            "position":"Team Lead",
+            "description":"As the project manager for Parwan-e-Nisa, a grant project funded by the U.S. Department and initiated by TiE Lahore, my responsibilities include managing the team, arranging events and meetups, and updating the team on the project&apos;s progress. The project supports women entrepreneurs in achieving financial independence and impact through knowledge sharing and networking opportunities."
+
+        }
+    ]
+}

@@ -22,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, []);
   return (
     <div className="relative h-screen">
-      <Navbar isScrolled={isScrolled} />
+      <Navbar />
       <div className="bg-zinc-100 dark:bg-gray-600 w-64 main-page"></div>
       <div className="flex-1 flex overflow-hidden">
         <div className="flex-1 overflow-y-scroll">{children}</div>

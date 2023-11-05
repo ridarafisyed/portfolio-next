@@ -1,47 +1,23 @@
 'use client'
+import { useColorMode } from "@chakra-ui/react";
 import React, {useState} from "react";
 
 const ContactForm = () => {
   const [email, setEmail]= useState("")
   const [message, setMessage]= useState("")
-  // async function handleSubmmit(e:any){
-  //   e.preventDefault()
-  //   const data = {
-  //     email: String(e.target.email.value),
-  //     message : String(e.target.message.value),
-  //   }
-  //   // console.log(data)
-  //   try{
-  //     const response = await fetch('api/contact', {
-  //     method: "POST",
-  //     headers:{
-  //       'Content-Type':"application/json",
-  //       },
-  //     body: JSON.stringify(data),
-  //     })
-  //     if (response && !response?.ok ){
-  //       console.log("SUCCESS!")
-  //     }
-
-  //   }catch(error){
-  //     console.log(error)
-  //   }
-    
-    
-  // }
   async function handleSubmmit(event:React.FormEvent<HTMLElement>){
     event.preventDefault();
     
     
   }
-
+  const { colorMode } = useColorMode();
    
   return (
     <>
       <form onSubmit={handleSubmmit}>
         <div className="space-y-12">
           <div className="border-b border-gray-300/10 pb-12">
-            <p className="mt-1 text-sm leading-6 text-gray-200">
+            <p className={`mt-1 text-sm leading-6 ${colorMode === "dark"? "text-gray-200":"text-gray-800"}`}>
               If you have any query please Leave a Message I&lsquo;ll
               get back to you.
             </p>
@@ -50,7 +26,7 @@ const ContactForm = () => {
               <div className="sm:col-span-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium leading-6 text-gray-300">
+                  className={`block text-sm font-medium leading-6  ${colorMode === "dark"? "text-gray-200":"text-gray-700"}`}>
                   Email
                 </label>
                 <div className="mt-2">

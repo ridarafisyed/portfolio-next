@@ -12,8 +12,8 @@ const Education = () => {
   
   return (
     <section className="text-white body-font overflow-hidden" id="education">
-      <div className="container mx-auto flex px-5 py-8 items-center justify-left flex-col">
-        <div className="lg:w-2/3 w-full my-16 py-4">
+      <div className="container mx-auto flex px-5 py-16 items-center justify-left flex-col">
+        <div className="lg:w-2/3 w-full my-16 py-10">
           <h1 className="text-center title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
             Education
           </h1>

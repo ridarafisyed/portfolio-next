@@ -1,9 +1,9 @@
+import LoadingPage from '@/views/LoadingPage'
 import React from 'react'
 
 const Loading = () => {
-
   return (
-    <div>loading...</div>
+    <LoadingPage/>
   )
 }
 

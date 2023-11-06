@@ -29,14 +29,15 @@ import ThemeSwitchButton from "@/components/ThemeSwitchButton";
 import {NavItem} from "@/utils/interfaces"
 import { usePathname } from 'next/navigation'
 
+import { motion } from "framer-motion"
+import { navVariants } from "@/utils/motion";
+
 
 //  
-export default function WithSubnavigation() {
+export default function MainNavbar() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode } = useColorMode();
   
-
-
   return (
     <Box>
       <Flex
@@ -122,53 +123,55 @@ const DesktopNav = () => {
   const { colorMode } = useColorMode();
   
   return (
-    <Stack direction={"row"} spacing={4}>
-      {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label} >
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
-              <LinkItem
-                as={Link}
-                href={navItem.href ?? "#"}
-                color={colorMode ? "gray.500": "gray.200"}
-                // color={useColorMode("gray.500", "gray.200")}
-                fontSize={"sm"}
-                fontWeight={"500"}
-                _hover={{
-                  color: "#ffc000",
-                }}
-                _active={{
-                  color: "#ffc000"
-                }}
-                className={
-                  pathname === navItem.href
-                    ? "active" // Add a custom "active" class for active links
-                    : ""
-                }
-                 >
-                {navItem.label}
-              </LinkItem>
-            </PopoverTrigger>
+    <motion.nav variants={navVariants} initial={"hidden"}>
+      <Stack direction={"row"} spacing={4}>
+        {NAV_ITEMS.map((navItem) => (
+          <Box key={navItem.label} >
+            <Popover trigger={"hover"} placement={"bottom-start"}>
+              <PopoverTrigger>
+                <LinkItem
+                  as={Link}
+                  href={navItem.href ?? "#"}
+                  color={colorMode ? "gray.500": "gray.200"}
+                  // color={useColorMode("gray.500", "gray.200")}
+                  fontSize={"sm"}
+                  fontWeight={"500"}
+                  _hover={{
+                    color: "#ffc000",
+                  }}
+                  _active={{
+                    color: "#ffc000"
+                  }}
+                  className={
+                    pathname === navItem.href
+                      ? "active" // Add a custom "active" class for active links
+                      : ""
+                  }
+                  >
+                  {navItem.label}
+                </LinkItem>
+              </PopoverTrigger>
 
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                className={colorMode === "dark" ? "bg-white" : "bg-yellow-400"}
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}>
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
-            )}
-          </Popover>
-        </Box>
-      ))}
-    </Stack>
+              {navItem.children && (
+                <PopoverContent
+                  border={0}
+                  boxShadow={"xl"}
+                  className={colorMode === "dark" ? "bg-white" : "bg-yellow-400"}
+                  p={4}
+                  rounded={"xl"}
+                  minW={"sm"}>
+                  <Stack>
+                    {navItem.children.map((child) => (
+                      <DesktopSubNav key={child.label} {...child} />
+                    ))}
+                  </Stack>
+                </PopoverContent>
+              )}
+            </Popover>
+          </Box>
+        ))}
+        </Stack>
+      </motion.nav>
   );
 };
 

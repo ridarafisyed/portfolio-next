@@ -1,6 +1,8 @@
+import { useColorMode } from '@chakra-ui/react';
 import React from 'react'
 
 const Membership = () => {
+  const {colorMode} = useColorMode()
   return (
     <section className="text-white body-font overflow-hidden">
       <div className="container mx-auto flex px-5 py-8 items-center justify-left flex-col">
@@ -22,7 +24,7 @@ const Membership = () => {
                   </span>
                 </div>
                 <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
+                  <h2 className={`text-2xl font-medium ${colorMode === "dark" ?"text-zinc-200":"text-zinc-500"} title-font mb-2`}>
                     Assosiate Member
                   </h2>
                 </div>
@@ -37,7 +39,7 @@ const Membership = () => {
                   </span>
                 </div>
                 <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
+                  <h2 className={`text-2xl font-medium ${colorMode === "dark" ?"text-zinc-200":"text-zinc-500"} title-font mb-2`}>
                     Assosiate Member
                   </h2>
                 </div>

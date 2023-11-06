@@ -1,20 +1,24 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import { Grid, GridItem } from "@chakra-ui/react";
+import { motion } from "framer-motion"
+import { zoomIn } from "@/utils/motion";
 
 
 const Infro = () => {
   return (
-    <div className=" text-white body-font py-2 mx-auto"  id="Intro">
-      <Grid templateColumns={{ base: '1fr', md: '1fr 1fr' }} gap={4} className="grid grid-cols-2 px-4 py-4 mx-4 justify-center">
-        <GridItem order={2} className="lg:w-2/3 w-full my-16 mx-auto py-10 px-4">
+    <motion.div >
+    <div className=" text-white body-font py-24 mx-auto"  id="Intro">
+      <Grid templateColumns={{ base: '1fr', md: '1fr 1fr' }} gap={2} className="px-4 py-12 mx-4 justify-center">
+        <GridItem  className="lg:w-2/3 w-full my-16 mx-auto py-10 px-4">
           <h1 className="title-font sm:text-4xl text-4xl my-6 font-medium text-yellow-500">
             Rida R. Syed
           </h1>
-          <h1 className="title-font sm:text-md text-yellow-500 text-xl my-6 font-medium uppercase">
+          <h1 className="title-font sm:text-md text-yellow-500 text-2xl my-6 font-medium uppercase">
             software engineer
           </h1>
-          <div className="justify-center text-zinc-400 sx:text-md text-sm font-base">
+          <div className="justify-center text-zinc-400 sx:text-md text-md font-base">
             <p className="text-justify">
               Hello! I am Software Developer from Pakistan, Lahore. Specialized
               in Software & Web application design and development, also I am
@@ -37,16 +41,18 @@ const Infro = () => {
             </a>
           </div>
         </GridItem>
-        <GridItem order={1} className="justify-center mx-auto py-8">
+        <GridItem  className="justify-center mx-auto py-8">
           <Image
             src={"/asserts/profile_pic.png"}
             alt="profile_pic"
+            style={{ "width": "auto", "height":"auto"}}
             width={350}
             height={300}
           />
         </GridItem>
       </Grid>
-    </div>
+      </div>
+      </motion.div>
   );
 };
 

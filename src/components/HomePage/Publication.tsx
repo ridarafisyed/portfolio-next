@@ -1,10 +1,13 @@
+'use client '
+import { useColorMode } from "@chakra-ui/react";
 import React from "react";
 
 const Publication = () => {
+  const {colorMode} = useColorMode()
   return (
     <section className="text-white body-font overflow-hidden">
-      <div className="container mx-auto flex px-5 py-14 items-center justify-left flex-col">
-        <div className="lg:w-2/3 w-full my-16 py-4">
+      <div className="container mx-auto flex px-5 py-24 items-center justify-left flex-col">
+        <div className="lg:w-2/3 w-full my-16 py-16">
           <h1 className="text-center title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
             Publications
           </h1>
@@ -20,7 +23,7 @@ const Publication = () => {
                   <span className="mt-1 text-zinc-400 text-sm">2021</span>
                 </div>
                 <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
+                  <h2 className={`text-2xl font-medium title-font mb-2 ${colorMode === "dark" ?"text-zinc-200":"text-zinc-500"}`}>
                     Visualization of Salient Object with Saliency Maps using
                     Residual Neural Networks
                   </h2>

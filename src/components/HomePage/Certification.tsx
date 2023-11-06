@@ -2,6 +2,7 @@ import React from "react";
 import certificationData from "@/data/certification.json"
 import { Certificate } from "crypto";
 import Image from "next/image";
+import { useColorMode } from "@chakra-ui/react";
 
 
 type CertificationType = {
@@ -17,11 +18,12 @@ type CertificationsDataType = {
 };
 
 const Certification = () => {
+  const {colorMode} = useColorMode()
   const {certifications} = certificationData as CertificationsDataType
   return (
     <section className="text-white body-font overflow-hidden" id="cerfication">
-      <div className="container mx-auto flex px-5 py-4 items-center justify-left flex-col">
-        <div className="lg:w-2/3 w-full my-16 py-4">
+      <div className="container mx-auto flex px-5 py-24 items-center justify-left flex-col">
+        <div className="lg:w-2/3 w-full my-16 py-16">
           <h1 className="text-center title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
             Certifications
           </h1>
@@ -46,16 +48,14 @@ const Certification = () => {
                       </span>
                     </div>
                     <div className="md:flex-grow">
-                      <h2 className="text-2xl font-medium text-zinc-200 title-font mb-2">
+                      <h2 className={`text-2xl font-medium title-font mb-2 ${colorMode === "dark" ?"text-zinc-200":"text-zinc-500"}`}>
                         {certificate.name}
                       </h2>
                     </div>
                   </div>
                 )
               })}
-              {/* item start here */}
-              
-              {/* item end here */}
+       
             </div>
           </div>
         </div>

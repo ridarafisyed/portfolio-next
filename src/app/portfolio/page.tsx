@@ -1,14 +1,15 @@
 import React, {Suspense} from 'react'
 import Loading from './loading'
 import Portfolio from '@/views/Portfolio'
+import LoadingPage from '@/views/LoadingPage'
 
 const PortfolioPage = () => {
   return (
-    <div>
+    <>
       <Suspense fallback={<Loading />}>
         <Portfolio />
       </Suspense>
-    </div>
+    </>
   )
 }
 

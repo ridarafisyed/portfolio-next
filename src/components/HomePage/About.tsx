@@ -5,7 +5,7 @@ const About = () => {
     <section className="dark:text-white body-font overflow-hidden" id="about">
       <div className="container mx-auto flex px-5 py-24 items-center justify-left flex-col">
         <div className="lg:w-2/3 w-full my-16 py-10">
-          <h1 className="text-center title-font sm:text-4xl text-3xl my-6 font-medium text-yellow-500">
+          <h1 className="text-center title-font sm:text-4xl text-4xl my-6 font-medium text-yellow-500">
             Who Am I?
           </h1>
 
@@ -14,8 +14,8 @@ const About = () => {
               {/* item start here */}
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-yellow-500 "></h1>
 
-              <p className="text-lg text-justify  mt-2 mb-8 w-full">
-                Experienced web developer with 5+ years of expertise in
+              <p className="text-lg text-justify mt-2 mb-8 w-full">
+                Experienced web developer with 9+ years of expertise in
                 JavaScript, React, Next.js TypeScript Node.js, and SQL.
                 Proficient in Agile and Waterfall development environments, with
                 a focus on creating efficient and user-friendly web solutions.

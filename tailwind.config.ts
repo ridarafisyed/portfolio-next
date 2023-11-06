@@ -13,9 +13,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        spinner: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        spinner: 'spinner 2s linear infinite',
+      },
     },
   },
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     require('tailwindcss-dark-mode')()
   ],
   variants: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd',]

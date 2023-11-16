@@ -6,6 +6,12 @@
             "year":"Certified 2021",
             "name":" Introduction to Programming Using Python",
             "bagde": "/asserts/badges/mta.png"
+        },
+        {
+            "company":"IBM",
+            "year":"Certified 2023",
+            "name":"What is Data Science",
+            "bagde": "/asserts/badges/ibm1.png"
         }
     ]
 }

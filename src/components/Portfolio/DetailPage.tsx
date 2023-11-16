@@ -6,7 +6,8 @@ import React from "react";
 import {AiOutlineArrowLeft} from "react-icons/ai"
 
 const ProjectDetailPage = ({ project }: any) => {
-  const {colorMode} = useColorMode()
+  const { colorMode } = useColorMode()
+  console.log(project.link)
   return (
     <div>
       <div className="container mx-auto">
@@ -25,10 +26,10 @@ const ProjectDetailPage = ({ project }: any) => {
             <Box >
               <Image className="rounded-lg" width={500} height={450} style={{ width: "auto", height: "auto" }}  src={project.path} alt={project.title}  loading="eager" priority />
               <div className=" max-w-xl flex flex-row mt-3 px-3 py-1.5 font-medium gap-4">
-                <Link href="#" className="">GitHub </Link>
-                <Link href={project.link} className="text-[#ffc000]">
+                {/* <Link href="#" className="">GitHub </Link> */}
+                <a href={project.link} target="_blank"  className="text-[#ffc000]">
                   Demo
-                </Link>
+                </a>
               </div>
             </Box>
             <Box >
